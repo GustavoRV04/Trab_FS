@@ -1,0 +1,4 @@
+npm install http-status-codes
+npm install express
+docker compose
+npm install dotenv

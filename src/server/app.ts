@@ -1,13 +1,11 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import { server } from './Server';
 
-server.listen(3333, () => console.log('Server is running on http://localhost:3333'));
+
+
+
 const app = express();
-const port = 3000;
+const port = process.env.port || 3333;
 app.use(express.json());
-app.get('/hello', (req: Request, res: Response) => {
- res.json({ message: "Hello World from Typescript" });
-});
-app.listen(port, () => {
- console.log(`Servidor rodando em http://localhost:${port}`);
-});
+
+server.listen(process.env.port || 3333, () => console.log('Server is running on port', port));

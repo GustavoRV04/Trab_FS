@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "node dist/server/app.js",
     "build": "tsc",
     "dev": "nodemon src/server/app.ts --exec ts-node"
   },
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/css": "^0.11.1",
