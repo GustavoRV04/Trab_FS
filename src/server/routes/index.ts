@@ -1,15 +1,19 @@
 import { Router } from "express";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { StatusCodes} from 'http-status-codes';
+
+import {CidadesController} from './../controllers';
+
+
 
 const router = Router();
 
-router.post('/teste', (req, res) => {
-    console.log(req);
-    return res.status(StatusCodes.UNAUTHORIZED).json(req.body);
+router.get('/', (req, res) => {
+    return res.send('Olá, mundo!');
 });
 
-router.get('/teste', (req, res) => {
-    return res.send('Hello get');
-});
+router.post('/cidades', CidadesController.create);
+
+
 
 export { router };
