@@ -3,3 +3,5 @@ npm install express
 docker compose
 npm install dotenv
 npm install yup
+npm install typeorm
+npm install pg

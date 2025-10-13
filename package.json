@@ -12,9 +12,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/jest": "^30.0.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "http-status-codes": "^2.3.0",
+    "jest": "^30.2.0",
+    "pg": "^8.16.3",
+    "ts-jest": "^29.4.4",
+    "typeorm": "^0.3.27",
     "yup": "^1.7.1"
   },
   "devDependencies": {
