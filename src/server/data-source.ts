@@ -1,6 +1,8 @@
 import { DataSource } from "typeorm";
 import { Cidade } from "./entity/Cidade";
 import { Estado } from "./entity/Estado";
+import { Pessoa } from "./entity/Pessoa";
+import { Usuario } from "./entity/Usuarios";
 
 export const AppDataSource = new DataSource({
     type: "postgres",    
@@ -12,7 +14,7 @@ export const AppDataSource = new DataSource({
     synchronize: true,
     logging: true,
     // dropSchema: true, //adicionar se quiser limpar o banco
-    entities: ["./entity/*.ts", Cidade, Estado],
+    entities: ["./entity/*.ts", Cidade, Estado, Pessoa, Usuario],
     subscribers: [],
     migrations: [],
 })

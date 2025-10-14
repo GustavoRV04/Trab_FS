@@ -3,7 +3,8 @@ import { Router } from "express";
 import { StatusCodes} from 'http-status-codes';
 import {CidadesController} from './../controllers';
 import { EstadosController } from "../controllers/estados";
-
+import { PessoasController } from "../controllers/pessoas";
+import { UsuariosController } from "../controllers/usuarios";
 
 const router = Router();
 
@@ -19,6 +20,20 @@ router.delete('/cidades/:id',CidadesController.deleteByIdValidation,CidadesContr
 
 // Rotas de estados
 router.post("/estados", EstadosController.createValidation, EstadosController.create);
+router.get("/estados/:id", EstadosController.getByIdValidation, EstadosController.getById);
+router.delete("/estados/:id", EstadosController.deleteByIdValidation, EstadosController.deleteById);
+router.put("/estados/:id", EstadosController.updateByIdValidation, EstadosController.updateById);
 
+// Rotas de pessoas
+
+router.post("/pessoas", PessoasController.createValidation, PessoasController.create);
+router.get("/pessoas/:id", PessoasController.getByIdValidation, PessoasController.getById);
+router.delete("/pessoas/:id", PessoasController.deleteByIdValidation, PessoasController.deleteById);
+router.put("/pessoas/:id", PessoasController.updateByIdValidation, PessoasController.updateById);
+
+// Rotas de usuários
+router.post("/usuarios", UsuariosController.createValidation, UsuariosController.create);
+router.post("/usuarios/signin", UsuariosController.signinValidation, UsuariosController.signin);
+router.get("/usuarios/:email", UsuariosController.getByEmailValidation, UsuariosController.getByEmail);
 
 export { router };

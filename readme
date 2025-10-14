@@ -5,3 +5,6 @@ npm install dotenv
 npm install yup
 npm install typeorm
 npm install pg
+npm install bcryptjs
+npm install jsonwebtoken
+npm install @types/jsonwebtoken
