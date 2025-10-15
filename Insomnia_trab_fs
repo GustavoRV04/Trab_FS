@@ -1,0 +1,389 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_8e779c7c57364596aed19a342c7f983c
+  created: 1760567419651
+  modified: 1760567419651
+  description: ""
+collection:
+  - name: pessoas
+    meta:
+      id: fld_b8a1b6ca79474cc794698f454f4522d3
+      created: 1760567448602
+      modified: 1760567448602
+      sortKey: -1760567448602
+      description: ""
+    children:
+      - url: http://localhost:3000/pessoas/1
+        name: getbyid
+        meta:
+          id: req_be1cba50385848a3af588271fdfc8438
+          created: 1760568421226
+          modified: 1760568523045
+          isPrivate: false
+          description: ""
+          sortKey: -1760568421226
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/pessoas
+        name: create
+        meta:
+          id: req_c81d37f953854e388b5edb89b49f4217
+          created: 1760568452916
+          modified: 1760568480146
+          isPrivate: false
+          description: ""
+          sortKey: -1760568452916
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/pessoas/1
+        name: delete
+        meta:
+          id: req_efb7c35f5c8b451794a7f8e56b6d9306
+          created: 1760568534867
+          modified: 1760568567774
+          isPrivate: false
+          description: ""
+          sortKey: -1760568327984
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/pessoas/1
+        name: updatebyid
+        meta:
+          id: req_d9e39aa134f0490399773d4649913434
+          created: 1760568585308
+          modified: 1760568589853
+          isPrivate: false
+          description: ""
+          sortKey: -1760568281363
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: estados
+    meta:
+      id: fld_ccadd480708548419a6d891725afe365
+      created: 1760567488238
+      modified: 1760567488238
+      sortKey: -1760567488238
+      description: ""
+    children:
+      - url: http://localhost:3000/estados
+        name: Create
+        meta:
+          id: req_7547188e08104fa79f6d1303791b024a
+          created: 1760568234742
+          modified: 1760568267567
+          isPrivate: false
+          description: ""
+          sortKey: -1760568234742
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/estados/1
+        name: getbyid
+        meta:
+          id: req_9430ffb7bbc44a9db6ef451f3b1bbd3f
+          created: 1760568325004
+          modified: 1760568413044
+          isPrivate: false
+          description: ""
+          sortKey: -1760568131801
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/estados/1
+        name: deletebyid
+        meta:
+          id: req_3adb95da890e478e90f8c63ce4c40034
+          created: 1760568358033
+          modified: 1760568409625
+          isPrivate: false
+          description: ""
+          sortKey: -1760568080330.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/estados/1
+        name: updatebyid
+        meta:
+          id: req_29fe64bf03884c71b0c3e407c8ea121e
+          created: 1760568393593
+          modified: 1760568403813
+          isPrivate: false
+          description: ""
+          sortKey: -1760568054595.25
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: cidades
+    meta:
+      id: fld_d695fe59d1e34f4380de3d5a11eb4b44
+      created: 1760567498919
+      modified: 1760568064730
+      sortKey: -1760567498919
+      description: ""
+    children:
+      - url: http://localhost:3000/cidades/1
+        name: getbyid
+        meta:
+          id: req_a9c5fecaad2346fe899984eb50aab6fa
+          created: 1760568028860
+          modified: 1760568097540
+          isPrivate: false
+          description: ""
+          sortKey: -1760568028860
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cidades
+        name: Create
+        meta:
+          id: req_464dffad5e9449459a3533e5bd719062
+          created: 1760568117181
+          modified: 1760568257496
+          isPrivate: false
+          description: ""
+          sortKey: -1760567968678
+        method: POST
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cidades/1
+        name: delete
+        meta:
+          id: req_9b7cadb73ab64f6fb75b125168fb67a0
+          created: 1760568161932
+          modified: 1760568166419
+          isPrivate: false
+          description: ""
+          sortKey: -1760567938587
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/cidades/1
+        name: updatebyid
+        meta:
+          id: req_e6c2ea8ae96343d3b4213c694b2f2697
+          created: 1760568185744
+          modified: 1760568189195
+          isPrivate: false
+          description: ""
+          sortKey: -1760567923541.5
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: usuarios
+    meta:
+      id: fld_818686c7995b4986bf15d7a31fcf2914
+      created: 1760567507197
+      modified: 1760567507197
+      sortKey: -1760567507197
+      description: ""
+    children:
+      - url: http://localhost:3000/usuarios
+        name: cadastrar
+        meta:
+          id: req_ae0bc94fada54cf7ae139aa2d4f27681
+          created: 1760567540962
+          modified: 1760567928934
+          isPrivate: false
+          description: ""
+          sortKey: -1760567540962
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "GUST"
+
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/usuarios/:email
+        name: getbyemail
+        meta:
+          id: req_0b1619ddc10d4b259870ccae27312b3f
+          created: 1760567908496
+          modified: 1760567970414
+          isPrivate: false
+          description: ""
+          sortKey: -1760567908496
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+        pathParameters:
+          - name: email
+            value: ""
+      - url: http://localhost:3000/usuarios
+        name: signin
+        meta:
+          id: req_ba0caf8080b54704bc283db995a7f30f
+          created: 1760567995282
+          modified: 1760567995282
+          isPrivate: false
+          description: ""
+          sortKey: -1760567480326
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "GUST"
+
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9440e33da1daacf3eb31913e0e4a35f19ace96f8
+    created: 1760567419654
+    modified: 1760567419654
+environments:
+  name: Base Environment
+  meta:
+    id: env_9440e33da1daacf3eb31913e0e4a35f19ace96f8
+    created: 1760567419653
+    modified: 1760567419653
+    isPrivate: false
