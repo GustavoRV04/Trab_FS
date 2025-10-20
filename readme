@@ -8,3 +8,4 @@ npm install pg
 npm install bcryptjs
 npm install jsonwebtoken
 npm install @types/jsonwebtoken
+docker-compose -f docker-compose.yml up -d
